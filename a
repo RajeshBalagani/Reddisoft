@@ -1,0 +1,8 @@
+We Need to move a number of .gitlab-ci pipeline configuration files into seperate repo's which can then be versioned with tags.
+The current files are located here in a single repo 
+
+  The 4 files are. Packer Serverless Terraform Zimperium other files can be ignored. Each of these files needs its own repo, ideally each repo will run a gitlab ci lint job to ensure that the code is valid, this will need a bit of research but i am sure somthing will exist. The new repo is located here 
+
+The wider DWP has its own area we can use as an example... 
+
+ In our group create a repo for each file, think of a suitable name. modify the repo's so that the 2 branches are Master and Develop. Delete main and ensure master and Develop are also protected create a cicd pipline file that runs linting / checking on each of the gitlab files. once done and we get a Pass do the following, create a new tag release for each of the files called v1.0.0. Any issues or questons let me know
